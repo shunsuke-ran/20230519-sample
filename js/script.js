@@ -4,7 +4,7 @@ window.addEventListener('load', function () {
 
     $button.addEventListener('click', function () {
         if ($menu.classList.contains('is-show')) {
-        $menu.classList.remove('is-show');
+            $menu.classList.remove('is-show');
         }
         else {
             $menu.classList.add('is-show');
@@ -12,8 +12,8 @@ window.addEventListener('load', function () {
     });
 });
 
-$(function() {
-    $(window).scroll(function() {
+$(function () {
+    $(window).scroll (function () {
         $("nav.floating").stop().animate(
             {"top": $(window).scrollTop() + 100},
         500);
